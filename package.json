@@ -1,0 +1,14 @@
+{
+  "name": "config-sync",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "server": "bun src/server.ts",
+    "sync": "bun src/cli.ts",
+    "pm2": "pm2 start ecosystem.config.cjs",
+    "pm2:logs": "pm2 logs config-sync",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": { "@types/bun": "^1.3.14", "typescript": "^5.9.0" }
+}

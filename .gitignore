@@ -1,0 +1,13 @@
+# payload：配置数据全部在这个目录里，由同步工具搬运，不进 git
+/payload/
+
+# 运行时
+/.sync/
+/.sync-server/
+/data/
+/history/
+/.env
+/node_modules/
+
+# 旧仓库备份
+/.git.old-*/
